@@ -29,6 +29,7 @@
 
 #include <iostream>
 using std::cout; using std::ostream;
+using std::endl;
 
 #include "Quote.h"
 
@@ -45,4 +46,6 @@ int main()
 	// calls the version from the base class 
 	// regardless of the dynamic type of baseP
 	double undiscounted = baseP->Quote::net_price(42);
+	cout << undiscounted << endl;
+//	Disc_quote disc_obj; // lpq add for a object derived from abstract base;
 }
